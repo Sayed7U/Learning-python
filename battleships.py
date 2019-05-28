@@ -1,3 +1,4 @@
+#made by sayed
 from random import randint
 import time
 board = []
