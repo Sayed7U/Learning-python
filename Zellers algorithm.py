@@ -1,5 +1,5 @@
 __author__ = 'Sayed'
-print "Welcome to the day finder. Using Zellers algorithm"
+print("Welcome to the day finder. Using Zellers algorithm")
 d = int(input("Enter a date (1-31)"))
 m = int(input("Enter a month (1-12) "))
 y = int(input("Enter a year (YYYY)"))
@@ -21,7 +21,7 @@ while True:
     output = zellers(d, m, y)
     for i in range(0,7):
         if output == i:
-            print str(d) + "/" + str(m) + "/" + str(y) + " was a " + days[i]
+            print(str(d) + "/" + str(m) + "/" + str(y) + " was a " + days[i])
     d = int(input("Enter the date (1-31)"))
     m = int(input("Enter the month (1-12) "))
     y = int(input("Enter the year (YYYY)"))

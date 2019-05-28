@@ -1,15 +1,19 @@
 __author__ = 'Sayed'
 
 
-def median(l):
-    if len(l) > 1:
-        midele = float(len(l) + 1)/ float(2)
-        l = sorted(l)
-        if len(l) % 2 == 0:
-            median = float((l[int(midele - 1)] + l[int(midele)]))  / float(2)
+def median(List):
+    if len(List) > 1:
+        midele = float(len(List) + 1)/ float(2)
+        List = sorted(List)
+        if len(List) % 2 == 0:
+            median = float((List[int(midele - 1)] + List[int(midele)]))  / float(2)
         else:
-            median = l[int(midele - 1)]
-        return median
+            median = List[int(midele-1)]
+        print(List)
+        print(median)
     else:
-        return l[0]
+        print(List[0])
+while True:
+    a = [int(x) for x in input("Enter input:").split()]
+    median(a)
 

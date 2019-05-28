@@ -1,7 +1,6 @@
 __author__ = 'Sayed'
 
-print "Welcome to the prime number test."
-
+print("Welcome to the prime number test.")
 
 def is_prime(x):
     if x >= 0:
@@ -17,23 +16,23 @@ def is_prime(x):
                     return True
     else:
         return False
-number = raw_input("Input an integer: ")
+number = input("Input an integer: ")
 
 while True:
         if "." in number and not any(c.isalpha() for c in number) or number.isdigit():
             if float(number) - round(float(number)) != 0:
-                print "That's not an INTEGER u clapped goat."
-                number = raw_input("Input an integer: ")
+                print("That's not an INTEGER u clapped goat.")
+                number = input("Input an integer: ")
             else:
                 number = int(number)
                 if is_prime(number) is True:
-                    print str(number) + " is a prime number."
-                    number = raw_input("Input an integer: ")
+                    print(str(number) + " is a prime number.")
+                    number = input("Input an integer: ")
                 else:
-                    print str(number) + " is not a prime number."
-                    number = raw_input("Input an integer: ")
+                    print(str(number) + " is not a prime number.")
+                    number = input("Input an integer: ")
         else:
-            print "Invalid syntax"
-            number = raw_input("Input an integer: ")
+            print("Invalid syntax")
+            number = input("Input an integer: ")
 
 
