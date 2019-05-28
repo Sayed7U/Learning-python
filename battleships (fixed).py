@@ -28,8 +28,8 @@ print (ship_row + 1)
 # Everything from here on should go in your for loop!
 # Be sure to indent four spaces!
 for turn in range(1, 5):
-    guess_col = int(raw_input("Guess Col:"))
-    guess_row = int(raw_input("Guess Row:"))
+    guess_col = int(input("Guess Col:"))
+    guess_row = int(input("Guess Row:"))
     if (guess_row - 1) == ship_row and (guess_col - 1) == ship_col:
         print ("Congratulations! You sunk my battleship!")
         break
@@ -44,5 +44,5 @@ for turn in range(1, 5):
         if turn == 4:
             print ("Game Over!")
             break
-        print "Turn " + str(turn + 1)
+        print("Turn " + str(turn + 1))
         print_board(board)
