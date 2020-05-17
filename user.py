@@ -11,6 +11,7 @@ class User:
         name_pieces = full_name.split(" ")
         self.first_name = name_pieces[0]
         self.last_name = name_pieces[-1]
+
     def age(self):
         """Returns the age of the user in years"""
         yyyy = int(self.birthday[0:4])
@@ -21,8 +22,15 @@ class User:
         age_in_days = (today - dob).days
         return int(age_in_days / 365)
 
+    def legal_age(self):
+        age = self.age()
+        if age >= 18:
+            return True
+        else:
+            return False
+
         
-user = User("Dave Bowman", "19980831")
+user = User("Sayed Miah", "19980831")
 print(user.name)
 print(user.first_name)
-print(user.age())
+print(user.legal_age())
